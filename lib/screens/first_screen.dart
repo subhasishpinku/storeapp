@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:storeapp/constants/colors.dart';
+import 'package:storeapp/screens/login_screen.dart';
 
 class FirstScreen extends StatefulWidget {
   const FirstScreen({super.key});
@@ -28,7 +30,7 @@ class _FirstScreenState extends State<FirstScreen> {
                     width: 150,
                     height: 150,
                     child: Image.asset(
-                      "assets/images/customer_support.jpg",
+                      "assets/images/store.png",
                       fit: BoxFit.fill,
                     ),
                   ),

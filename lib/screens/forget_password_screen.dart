@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:storeapp/component/createdTextField.dart';
+import 'package:storeapp/constants/colors.dart';
+import 'package:storeapp/screens/login_screen.dart';
 
 class ForgetPasswordScreen extends StatefulWidget {
   const ForgetPasswordScreen({super.key});
@@ -115,7 +118,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                           height: 60,
                           child: Center(
                               child:
-                                  Image.asset('assets/images/app_logo.png'))),
+                                  Image.asset('assets/images/store.png'))),
                       const Text(
                         "Forgot Password",
                         style: TextStyle(
@@ -141,7 +144,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                       Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
-                          "Fixed Asset Management at \nyour Finger Tips",
+                          "Fixed Store Management at \nyour Finger Tips",
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.normal,

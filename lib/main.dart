@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:storeapp/constants/colors.dart';
+import 'package:storeapp/dashboard/dashboard_provider.dart';
+import 'package:storeapp/home/home_provider.dart';
+import 'package:storeapp/screens/splash_screen.dart';
 
 void main() {
   runApp(

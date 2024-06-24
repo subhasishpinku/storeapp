@@ -7,7 +7,7 @@ Widget homeCard() {
   return Container(
     padding: EdgeInsets.all(16.0),
     decoration: BoxDecoration(
-      color: AppColor.defaultlightsky,
+      color: AppColor.primaryColor,
       borderRadius: BorderRadius.circular(
         20,
       ),
@@ -18,7 +18,7 @@ Widget homeCard() {
         Text(
           "Comming Asset",
           style: TextStyle(
-            color: AppColor.defaultdarkblue,
+            color: AppColor.defaultWhite,
             fontSize: 23,
             fontWeight: FontWeight.bold,
           ),
@@ -36,7 +36,7 @@ Widget homeCard() {
                   text: TextSpan(
                     text: 'Asset Name',
                     style: TextStyle(
-                      color: AppColor.defaultdarkblue,
+                      color: AppColor.defaultWhite,
                       // fontWeight: FontWeight.bold,
                       fontSize: 18,
                     ),
@@ -44,7 +44,7 @@ Widget homeCard() {
                       TextSpan(
                         text: ' QR\nCode',
                         style: TextStyle(
-                          color: AppColor.defaultdarkblue,
+                          color: AppColor.defaultWhite,
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
                         ),

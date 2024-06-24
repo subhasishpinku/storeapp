@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:storeapp/constant.dart';
 import 'package:storeapp/model/allinonboardscreen.dart';
+import 'package:storeapp/screens/first_screen.dart';
 
 class OnboardScreen extends StatefulWidget {
   const OnboardScreen({Key? key}) : super(key: key);
@@ -107,7 +108,12 @@ class _OnboardScreenState extends State<OnboardScreen> {
                   bottom: MediaQuery.of(context).size.height * 0.2,
                   left: MediaQuery.of(context).size.width * 0.33,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).pushAndRemoveUntil(
+                          MaterialPageRoute(
+                              builder: (context) => const FirstScreen()),
+                          (Route route) => false);
+                    },
                     child: Text(
                       "Get Started",
                       style: TextStyle(fontSize: 18, color: primarygreen),

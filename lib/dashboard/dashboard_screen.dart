@@ -1,11 +1,10 @@
 import 'package:dots_indicator/dots_indicator.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'package:storeapp/constants/colors.dart';
+import 'package:storeapp/dashboard/dashboard_provider.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -55,7 +54,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         shape: BoxShape.circle,
                         image: DecorationImage(
                           fit: BoxFit.fill,
-                          image: AssetImage("assets/images/assetcomply2.png"),
+                          image: AssetImage("assets/images/store.png"),
                         ),
                       ),
                     ),
@@ -162,7 +161,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 Padding(
                   padding: EdgeInsets.only(left: 40.0),
                   child: Text(
-                    "My Asset",
+                    "STORE NAME",
                     style: TextStyle(
                       color: AppColor.defaultdarkblue,
                       fontSize: 16,
@@ -203,11 +202,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             IconButtonElement(
                               onTap: () {},
                               icon: const Icon(
-                                Icons.verified,
+                                Icons.storage_sharp,
                                 size: iconSize,
                                 color: AppColor.defaultWhite,
                               ),
-                              label: 'Verification',
+                              label: 'STORE 1',
                             ),
                           ],
                         ),
@@ -220,11 +219,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         IconButtonElement(
                           onTap: () {},
                           icon: const Icon(
-                            Icons.warning_amber_rounded,
+                            Icons.storage_sharp,
                             size: iconSize,
                             color: AppColor.defaultWhite,
                           ),
-                          label: 'Breakdown',
+                          label: 'STORE 2',
                         ),
                       ],
                     ),
@@ -235,11 +234,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         IconButtonElement(
                           onTap: () {},
                           icon: const Icon(
-                            Icons.aod_outlined,
+                            Icons.storage_sharp,
                             size: iconSize,
                             color: AppColor.defaultWhite,
                           ),
-                          label: 'Activity',
+                          label: 'STORE 3',
                         ),
                       ],
                     ),
@@ -260,11 +259,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         IconButtonElement(
                           onTap: () {},
                           icon: const Icon(
-                            Icons.settings,
+                            Icons.storage_sharp,
                             size: iconSize,
                             color: AppColor.defaultWhite,
                           ),
-                          label: 'Maintenance',
+                          label: 'STORE 4',
                         ),
                       ],
                     ),
@@ -277,11 +276,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             IconButtonElement(
                               onTap: () {},
                               icon: const Icon(
-                                Icons.transform,
+                                Icons.storage_sharp,
                                 size: iconSize,
                                 color: AppColor.defaultWhite,
                               ),
-                              label: 'Transfer',
+                              label: 'STORE 5',
                             ),
                           ],
                         ),
@@ -294,11 +293,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         IconButtonElement(
                           onTap: () {},
                           icon: const Icon(
-                            Icons.close,
+                            Icons.storage_sharp,
                             size: iconSize,
                             color: AppColor.defaultWhite,
                           ),
-                          label: 'Discard',
+                          label: 'STORE 6',
                         ),
                       ],
                     ),

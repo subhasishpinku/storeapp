@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:storeapp/constants/device_info.dart';
+import 'package:storeapp/onboard.dart';
+import 'package:storeapp/screens/first_screen.dart';
+import 'package:storeapp/widgets/loading_animation.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -13,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Future.delayed(const Duration(seconds: 2)).then((_) {
       Navigator.of(context).pushAndRemoveUntil(
-          MaterialPageRoute(builder: (context) => const FirstScreen()),
+          MaterialPageRoute(builder: (context) => const OnboardScreen()),
           (Route route) => false);
     });
   }
@@ -32,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/images/ac-logo.png',
+                'assets/images/store.png',
                 height: 250.0,
               ),
               SizedBox(height: DeviceInfo.height(context) * 0.3),
